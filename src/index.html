@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Список студентов</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Работа со студентами</h1>
+    <ul class="list-group">
+      <li class="list-group-item parent-item">
+        <ul class="list-group flex-row cursor-pointer">
+          <li id = "fullName" class="list-group-item header">ФИО</li>
+          <li id = "faculty" class="list-group-item header">Факультет</li>
+          <li id = "birthday" class="list-group-item header">Дата рождения (возраст)</li>
+          <li id = "studyStart" class="list-group-item header">Годы обучения (курс)</li>
+          <button class="btn btn-primary">Добавить студента </button>
+        </ul>
+      </li>
+      <li class="list-group-item parent-item">
+        <form class="input-group flex-row filter">
+          <input data-name ="fullName" type="text" class="form-control filter-input" placeholder="Фамилия Имя Отчество">
+          <input data-name ="faculty" type="text" class="form-control filter-input" placeholder="Факультет">
+          <input data-name ="studyStart" type="number" class="form-control filter-input" placeholder="Год начала обучения">
+          <input data-name ="studyEnd" type="number" class="form-control filter-input" placeholder="Год окончания обучения">
+          <button class="btn btn-secondary">Искать</button>
+        </form>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
